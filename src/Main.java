@@ -43,31 +43,45 @@ void main() {
         }
         if (rang >= 18 && rang <= 24) {
             System.out.println("человеку надо ходить в институт");
-        } if(rang>24) {
+        }
+        if (rang > 24) {
             System.out.println("человеку надо ходить на работу");
 
         }
 
-int chaild=10;
-        if (chaild<5) {System.out.println("ребенку нельзя кататься на атракционе");}
-if(chaild>5 && chaild<=14)
-{System.out.println("ребенок может кататься на атракционе в сопровождении взрослого");}
-if(chaild>14)
-{System.out.println("ребенок может кататься на атракционе без сопровождения взрослого");}
+        int child = 10;
+        if (child < 5) {
+            System.out.println("ребенку нельзя кататься на атракционе");
+        }
+        if (child > 5 && child <= 14) {
+            System.out.println("ребенок может кататься на атракционе в сопровождении взрослого");
+        }
+        if (child > 14) {
+            System.out.println("ребенок может кататься на атракционе без сопровождения взрослого");
+        }
 
-int passenger=140;
-if(passenger>0 && passenger<=60){System.out.println("место сидячее");}
-else if (passenger>60 && passenger<=102)    {System.out.println("место стоячее");}
-else {System.out.println("вагон заполнен");}
+        int passenger = 140;
+        if (passenger > 0 && passenger <= 60) {
+            System.out.println("место сидячее");
+        } else if (passenger > 60 && passenger <= 102) {
+            System.out.println("место стоячее");
+        } else {
+            System.out.println("вагон заполнен");
+        }
 
 
-        int one=1;
-        int two=1;
-        int three=1;
+        int one = 1;
+        int two = 1;
+        int three = 1;
 
-        if (one>two && one>three) {System.out.println(one+"большее число");}
-            else if (two>one && two>three){System.out.println(two+"большее число");}
-                else if(three>one && three>two) {System.out.println(three+" большее число");}
-                else {System.out.println("числа равны");}
+        if (one > two && one > three) {
+            System.out.println(one + "большее число");
+        } else if (two > one && two > three) {
+            System.out.println(two + "большее число");
+        } else if (three > one && three > two) {
+            System.out.println(three + " большее число");
+        } else {
+            System.out.println("числа равны");
+        }
     }
 }
