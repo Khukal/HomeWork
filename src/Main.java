@@ -85,6 +85,6 @@ void main() {
                 " рублей. Годовой доход вырос на " + denisYearDiff + " рублей");
 
         System.out.println("Кристина теперь получает " + kristinaNewSalary +
-                " рублей. Годовой доход вырос на " + kristinaYearDiff + " рублей");
+                " рублей. Годовой доход вырос на " + kristinaYearDiff + " рублей.");
     }
 }
