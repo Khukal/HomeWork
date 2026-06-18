@@ -11,13 +11,19 @@ void main() {
         IO.println("i = " + i);
 
 
-        byte a = 127;
-        short b = 32767;
-        int c = 2000000;
-        long d = 10000000000L;
-        float e = 3.6f;
-        double f = 0.7777777777777;
-        System.out.println(a + "," + b + "," + c + "," + d + "," + e + "," + f);
+        int intValue = 100;
+        byte byteValue = 10;
+        short shortValue = 1000;
+        long longValue = 100000L;
+        float floatValue = 10.5f;
+        double doubleValue = 20.75;
+
+        System.out.println("Значение переменной intValue с типом int равно " + intValue);
+        System.out.println("Значение переменной byteValue с типом byte равно " + byteValue);
+        System.out.println("Значение переменной shortValue с типом short равно " + shortValue);
+        System.out.println("Значение переменной longValue с типом long равно " + longValue);
+        System.out.println("Значение переменной floatValue с типом float равно " + floatValue);
+        System.out.println("Значение переменной doubleValue с типом double равно " + doubleValue);
 
         float aa = 27.12f;
         long bb = 987678965549L;
@@ -70,21 +76,16 @@ void main() {
         double denisSalary = 83690;
         double kristinaSalary = 76230;
 
-        double mashaNewSalary = mashaSalary * 1.1;
-        double denisNewSalary = denisSalary * 1.1;
-        double kristinaNewSalary = kristinaSalary * 1.1;
+        System.out.println("Маша теперь получает " + mashaSalary * 1.1
+                + " рублей. Годовой доход вырос на "
+                + (mashaSalary * 1.1 - mashaSalary) * 12 + " рублей.");
 
-        double mashaYearDiff = (mashaNewSalary - mashaSalary) * 12;
-        double denisYearDiff = (denisNewSalary - denisSalary) * 12;
-        double kristinaYearDiff = (kristinaNewSalary - kristinaSalary) * 12;
+        System.out.println("Денис теперь получает " + denisSalary * 1.1
+                + " рублей. Годовой доход вырос на "
+                + (denisSalary * 1.1 - denisSalary) * 12 + " рублей.");
 
-        System.out.println("Маша теперь получает " + mashaNewSalary +
-                " рублей. Годовой доход вырос на " + mashaYearDiff + " рублей");
-
-        System.out.println("Денис теперь получает " + denisNewSalary +
-                " рублей. Годовой доход вырос на " + denisYearDiff + " рублей");
-
-        System.out.println("Кристина теперь получает " + kristinaNewSalary +
-                " рублей. Годовой доход вырос на " + kristinaYearDiff + " рублей.");
+        System.out.println("Кристина теперь получает " + kristinaSalary * 1.1
+                + " рублей. Годовой доход вырос на "
+                + (kristinaSalary * 1.1 - kristinaSalary) * 12 + " рублей.");
     }
 }
