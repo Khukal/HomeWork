@@ -10,82 +10,71 @@ void main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         IO.println("i = " + i);
 
+        int client = 1;
+        int age = 2014;
+        if (client == 0 && age < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (client == 0 && age >= 2015) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (client == 1 && age < 2015) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (client == 1 && age >= 2015) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+        int year = 2021;
+        if (year > 1584) {
+            if (year % 400 == 0) {
+                System.out.println(year + " год является високосным");
+            } else if (year % 100 == 0) {
+                System.out.println(year + " год не является високосным");
+            } else if (year % 4 == 0) {
+                System.out.println(year + " год является високосным");
+            } else {
+                System.out.println(year + " год не является високосным");
+            }
+        }
 
-        int intValue = 100;
-        byte byteValue = 10;
-        short shortValue = 1000;
-        long longValue = 100000L;
-        float floatValue = 10.5f;
-        double doubleValue = 20.75;
+        int deliveryDistance = 95;
+        int deliveryDays = 1;
 
-        System.out.println("Значение переменной intValue с типом int равно " + intValue);
-        System.out.println("Значение переменной byteValue с типом byte равно " + byteValue);
-        System.out.println("Значение переменной shortValue с типом short равно " + shortValue);
-        System.out.println("Значение переменной longValue с типом long равно " + longValue);
-        System.out.println("Значение переменной floatValue с типом float равно " + floatValue);
-        System.out.println("Значение переменной doubleValue с типом double равно " + doubleValue);
+        if (deliveryDistance > 20) {
+            deliveryDays++;
+        }
+        if (deliveryDistance > 60) {
+            deliveryDays++;
+        }
+        if (deliveryDistance > 100) {
+            System.out.println("Доставка не производится");
+        } else {
+            System.out.println("Потребуется дней: " + deliveryDays);
+        }
 
-        float aa = 27.12f;
-        long bb = 987678965549L;
-        float cc = 2.786f;
-        short dd = 569;
-        short ee = -159;
-        short ff = 27897;
-        byte gg = 67;
 
-        byte EA = 30;
-        byte AS = 27;
-        byte LP = 23;
-        int summa = EA + AS + LP;
-        int list = 480 / summa;
-        System.out.println("На каждого ученика рассчитано  " + list + "  листов бумаги");
+        int monthNumber = 12;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("весна");
+                break;
 
-        byte min = 16;
-        int minutes = min * 10;
-        int day = min * 720;
-        int threeDay = day * 3;
-        int month = day * 30;
-
-        System.out.println("производит за 20 минут : " + minutes + " производит в день: " + day + " бутылок " + " производит за три дня: " + threeDay +
-                "  производит в месяц: " + month);
-
-        byte paint = 120;
-        int classes = paint / 6;
-        int whitePaint = classes * 2;
-        int brownPaint = classes * 4;
-        System.out.println("В школе, где " + classes + " классов, нужно " + whitePaint + " банок белой краски и " + brownPaint + " банок коричневой краски");
-
-        byte banan = 80;
-        byte milk = 105;
-        byte iceCream = 100;
-        byte egg = 70;
-        int banans = banan * 5;
-        int milk2 = milk * 2;
-        int iceCreams = iceCream * 2;
-        int eggs = egg * 4;
-        int gr = banans + milk2 + iceCreams + eggs;
-        float kg = gr / 1000f;
-        System.out.println("граммы: " + gr + " килограммы: " + kg);
-
-        short massa = 7000;
-        int days = massa / 250;
-        int days2 = massa / 500;
-        System.out.println("количество дней если худеть по 250 гр в день : " + days + ".  количество дней если худеть по 500 гр в день : " + days2);
-
-        double mashaSalary = 67760;
-        double denisSalary = 83690;
-        double kristinaSalary = 76230;
-
-        System.out.println("Маша теперь получает " + mashaSalary * 1.1
-                + " рублей. Годовой доход вырос на "
-                + (mashaSalary * 1.1 - mashaSalary) * 12 + " рублей.");
-
-        System.out.println("Денис теперь получает " + denisSalary * 1.1
-                + " рублей. Годовой доход вырос на "
-                + (denisSalary * 1.1 - denisSalary) * 12 + " рублей.");
-
-        System.out.println("Кристина теперь получает " + kristinaSalary * 1.1
-                + " рублей. Годовой доход вырос на "
-                + (kristinaSalary * 1.1 - kristinaSalary) * 12 + " рублей.");
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("осень");
+                break;
+            default:
+                System.out.println("такого месяца не существует");
+        }
     }
 }
