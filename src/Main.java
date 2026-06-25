@@ -4,72 +4,51 @@ void main() {
 
 //task 1
     System.out.println("задача 1");
-    int os = 0;
-    if (os == 0) {
-        System.out.println("Установите версию приложения для iOS по ссылке");
-    } else if (os == 1) {
-        System.out.println("Установите версию приложения для Android по ссылке");
-    } else {
-        System.out.println("неверное значение!");
-    }
-//task 2
+  for (int i=1;i<=10; i=i+1){
+      System.out.println(i);}
+    //task 2
     System.out.println("задача 2");
-    os = 8;
-    int clientDeviceYear = 2015;
-    if (os == 0 && clientDeviceYear < 2015) {
-        System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-    } else if (os == 0 && clientDeviceYear >= 2015) {
-        System.out.println("Установите обычную версию приложения для ios по ссылке");
-    } else if (os == 1 && clientDeviceYear < 2015) {
-        System.out.println("Установите облегченную версию приложения для android по ссылке");
-    } else {
-        System.out.println("Установите обычную версию приложения для android по ссылке");
-    }
-//task 3
+  for (int j=10;0<j; j=j-1){
+      System.out.println(j);}
+    //task 3
     System.out.println("задача 3");
-    int year = 2021;
-    if (year > 1584 && ((year % 4 == 0 && year % 100 > 0) || year % 400 == 0)) {
-        System.out.println(year + "год является високосным");
-    } else {
-        System.out.println("год не является високосным");
-    }
+  for (int z=0; z<17; z=z+2) {
+      System.out.println(z);}
     //task 4
     System.out.println("задача 4");
-    int deliveryDistance = 95;
-    if (deliveryDistance <= 20) {
-        System.out.println("потребуется дней: " + 1);
-    } else if (20 < deliveryDistance && deliveryDistance <= 60) {
-        System.out.println("потребуется дней: " + 2);
-    } else if (60 < deliveryDistance && deliveryDistance <= 100) {
-        System.out.println("потребуется дней: " + 3);
-    } else {
-        System.out.println("доставки нет");
-    }
-    //task5
+  for (int l=10; l>=-10; l=l-1){
+      System.out.println(l);}
+    //task 5
     System.out.println("задача 5");
-   int monthNumber = 15;
-   switch(monthNumber) {
-    case 1:
-    case 2:
-    case 12:
-    System.out.println("зима");
-    break;
-    case 3:
-    case 4:
-    case 5:
-    System.out.println("весна");
-    break;
-    case 6:
-    case 7:
-    case 8:
-    System.out.println("лето");
-    break;
-    case 9:
-    case 10:
-    case 11:
-    System.out.println("осень");
-    break;
-    default:
-    System.out.println("такого месяца не существует");
-}
+  for (int year=1904; year<=2096; year=year+4) {
+      System.out.println(year+" год является високосным");}
+    //task 6
+    System.out.println("задача 6");
+  for (int x=7; x<=98; x=x+7){
+        System.out.println(x);}
+    //task 7
+    System.out.println("задача 7");
+  for (int y=1;y<=512;y=y*2){
+      System.out.println(y);}
+    //task 8
+    System.out.println("задача 8");
+  int summa=0;
+  for (int mounth=1;mounth<=12;mounth=mounth+1){ summa=summa+29000;
+        System.out.println("Месяц "+mounth+" сумма накоплений равна "+summa+" рублей");}
+    //task 9
+    System.out.println("задача 9");
+    int salary = 29000;
+    int total = 0;
+    for (int i = 0; i < 12; i++) {
+        total = total + total/100;
+        total = total + salary;
+        System.out.println("Месяц " + i + " Сумма накоплений  " + total+(" рублей "));
+    }
+    System.out.println(total);
+    //task 10
+    System.out.println("задача 10");
+int itog=0;
+    for (int w=1;w<=10;w=w+1) {
+        itog=w*2;
+        System.out.println(w+"*2= "+itog);}
 }
