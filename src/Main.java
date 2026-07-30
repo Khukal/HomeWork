@@ -13,35 +13,39 @@ void main() {
 
     //task 2
     System.out.println("задача 2");
-    // int distance = 0;
-    //do {
-    //    distance += 500;
-    //    System.out.println("Держитесь! Осталось" + (42195 - distance) + "метров");
-    // }
-    // while (distance < 42195);
+     int distance = 0;
+    do {
+       distance += 500;
+       if (42195-distance>0)
+        System.out.println("Держитесь! Осталось " + (42195 - distance) + " метров");
+     }
+     while (distance < 42195);
 
 
-    for (int distance = 500; distance <= 42500; distance += 500) {
-        System.out.println("Держитесь! Осталось" + (42195 - distance) + "метров");
+    for (int d = 500; d < 42500; d += 500) {
+        System.out.println("Держитесь! Осталось " + (42195 - d) + " метров");
     }
     //task3
     System.out.println("задача 3");
 
     int budget = 1000;
     int day = 0;
-    // while (budget > 0) {
+    while (budget >= 100) {
 
-    // day = day + 1;
-    // if (day % 5 == 0) {
-    //     continue;}
-    //  budget = budget - 100;
-    //   if (budget == 0) {
-    //        break;
-    //    }}
-    //   System.out.println("автомобиль можно оставить на " + day + " дней");
-    for (day = 0; budget > 0 || day % 5 == 0;
-         day++) {
-        if (day % 5 == 0) {
+     day = day + 1;
+    if (day % 5 == 0) {
+       continue;}
+    budget = budget - 100;
+    if (budget == 0) {
+        break;
+     }}
+     System.out.println("автомобиль можно оставить на " + day + " дней");
+    budget =1000;
+    int days=0;
+    for (int d = 1; budget >= 100 || d % 5 == 0;
+         d++) {
+        days++;
+        if (d% 5 == 0) {
             continue;
         }
         budget = budget - 100;
