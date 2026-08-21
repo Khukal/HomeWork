@@ -36,7 +36,7 @@ for (double i:doubleArr){
                 System.out.println(",");
             }
         }
-        for (int i=2;i<massiv.length && i>=0;i--) {
+        for (int i=massiv.length-1; i>=0; i--) {
             System.out.println(massiv[i]);
             if (i > 0) {
                 System.out.println(",");
@@ -49,7 +49,7 @@ for (double i:doubleArr){
             }
         }
         for (int index = 0; index < weight.length; index++){
-            System.out.println(weight[index] +"  ");}
+            System.out.println(weight[index] +" ");}
     }
     }
 
