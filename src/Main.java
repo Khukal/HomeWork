@@ -49,7 +49,7 @@ for (double i:doubleArr){
             }
         }
         for (int index = 0; index < weight.length; index++){
-            System.out.println(weight[index] +" ");}
+            System.out.println(weight[index] +"  ");}
     }
     }
 
